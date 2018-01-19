@@ -1,0 +1,4 @@
+rootProject.name = 'cqrs'
+include 'shared'
+include 'command'
+

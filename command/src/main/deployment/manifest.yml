@@ -1,0 +1,14 @@
+---
+applications:
+- name: command-app
+  memory: 1024M
+  instances: 1
+  path: ../../../build/libs/command-1.0-SNAPSHOT.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  host: command-app
+  services:
+  - p-circuit-breaker-dashboard
+  - p-service-registry
+  - config-server
+  - mysql
+  - p-rabbitmq

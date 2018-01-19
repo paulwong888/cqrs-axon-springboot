@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: command-app
+  profiles:
+    active: cloud,mongo
+server:
+  port: ${PORT:9000}

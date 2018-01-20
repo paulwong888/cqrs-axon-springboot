@@ -1,1 +1,24 @@
 message: Test
+management.security.enabled: false
+security.basic.enabled: false
+
+spring:
+  datasource:
+    testWhileIdle: true
+    validationQuery: SELECT 1
+  jpa:
+    database: MYSQL
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+axon:
+  amqp:
+    exchange: accountEvents
+    transaction-mode: none
+    durable-messages: true

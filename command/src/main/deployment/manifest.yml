@@ -7,8 +7,8 @@ applications:
   buildpack: https://github.com/cloudfoundry/java-buildpack.git
   host: command-app
   services:
-  - p-circuit-breaker-dashboard
-  - p-service-registry
-  - config-server
+#  - p-circuit-breaker-dashboard
+#  - p-service-registry
+#  - config-server
   - mysql
-  - p-rabbitmq
+  - rabbit

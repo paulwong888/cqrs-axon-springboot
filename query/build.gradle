@@ -57,6 +57,7 @@ dependencies {
 
     //Database
     compile("org.springframework.boot:spring-boot-starter-data-jpa:${springBootVersion}")
+    compile("org.springframework.boot:spring-boot-starter-data-rest:${springBootVersion}")
 
     //Axon
     compile "org.axonframework:axon-spring-boot-starter:${axonVersion}"

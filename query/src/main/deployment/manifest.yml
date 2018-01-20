@@ -1,0 +1,11 @@
+---
+applications:
+- name: query-app
+  memory: 1024M
+  instances: 1
+  path: ../../../build/libs/query-1.0-SNAPSHOT.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  host: query-app
+  services:
+  - mysql
+  - rabbit
